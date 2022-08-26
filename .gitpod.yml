@@ -1,0 +1,9 @@
+tasks:
+  - before: |
+      npm install -g browser-sync
+      npm install -g npm@8.11.0
+    command: browser-sync . -w
+
+ports:
+  - port: 3000
+    onOpen: open-preview
